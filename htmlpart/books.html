@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Add Books</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+</head>
+<body>
+<header style="height: 90px;">
+  
+<div class="logo">
+      <h1 style="color: white; font-size: 25px;word-spacing: 10px; line-height: 80px;margin-top: 20px;">ONLINE LIBRARY MANAGEMENT SYSTEM</h1>
+</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <!-- <li><a href="books.html">BOOKS</a></li>
+          <li><a href="student_login.html">STUDENT-LOGIN</a></li>
+          <li><a href="admin_login.html">ADMIN_LOGIN</a></li>
+          <li><a href="">FEEDBACK</a></li> -->
+        </ul>
+      </nav>
+
+</header>
+<section>
+  <div class="log_img1">
+    <br> <br><br>
+    <div class="box33">
+        <h1 style="text-align: center; font-size: 35px;font-family: Lucida Console;">Library Management</h1><br>
+        <h1 style="text-align: center; font-size: 25px;">Add New Book</h1><br>
+      <form name="login" action="" method="">
+        <br><br>
+        <div class="login">
+
+          
+
+          <b>Book ID:</b>
+          <input type="text" onkeypress="return onlyNumberKey(event)" name="Only Numeric value"  placeholder="" required=""Only Numeric value"> <br><br>
+
+          <b>Book Name:</b>
+          <input type="text" name="Book Name" placeholder="" required=""> <br><br>
+          <b>Publication:</b>
+          <input type="text" name="Publication" placeholder="" required=""> <br><br>
+          <b>Author:</b>
+          <input type="text" name="Author" placeholder="" required=""> <br><br>
+          <b>Quantiy:</b>
+          <input type="text" name="Quantiy" placeholder="" required=""> <br><br>
+          
+          </div>
+          <button id="myBtn">Add</button>
+          <script>
+			var x = document.getElementById("myBtn");
+			x.addEventListener("click", myFunction);
+			x.addEventListener("click", someOtherFunction);
+
+			function myFunction() {
+ 			 alert ("Book Added sucessfuly");
+			}
+            
+            function onlyNumberKey(evt) {
+          
+        // Only ASCII character in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
+
+			</script>
+      </form>
+      
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
